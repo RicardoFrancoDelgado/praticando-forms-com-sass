@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Iniciar Sessão</title>
+  </head>
+  <body>
+    <header>
+      <h1>Login</h1>
+    </header>
+
+    <main>
+      <section>
+        <form action="">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}$"
+            title="Digite que corresponda ao padrão email@email.com ou email@email.com.br"
+            required
+          />
+
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+            title="A senha deve conter ao menos 8 caracteres, incluindo uma letra maiúscula uma minuscula e um número"
+            required
+          />
+
+          <button type="submit">Entrar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
